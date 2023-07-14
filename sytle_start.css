@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logopeq {
+  position: absolute;
+  right: 20px;
+  width: 25%;
+  top: 1%;
+}
+.container2 {
+ width: 450px;
+ margin: auto;
+ text-align: center;
+ padding-top: 70px;
+}
+.hnk2 {
+  font-family: "HEINEKEN Core";
+  font-size: 32px;
+  font-weight: 400;
+  
+}
+
+.box {
+background-color: white;
+width: 400px;
+height: 300px;
+border-radius: 8px;
+margin-left: 7%;
+margin-top: 12%;
+}
+
+.lata {
+  position: absolute;
+  left: 10%;
+  top: 22%;
+}
+.arrow {
+  position: absolute;
+  left: 20%;
+  top: 38%;
+}

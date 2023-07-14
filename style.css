@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --verde-hnk: #a7e833;
+  --white: white;
+  --black: black;
+}
+
+@font-face {
+  font-family: "HEINEKEN Core";
+  src: url("fonts/HEINEKEN\ Core.woff") format("woff");
+}
+.bg {
+  background-image: url(assets/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #115A29;
+  width: 100%;
+  height: 100vh;
+  color: var(--white);
+}
+
+.container{
+  width: 758px;
+  margin: auto;
+  text-align: center;
+
+}
+.container img {
+  margin-top: 57px;
+}
+
+.container p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.hnk {
+  font-family: "HEINEKEN Core";
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.container a {
+  font-family: "HEINEKEN Core";
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--black);
+  background-color: var(--verde-hnk);
+  text-decoration: none;
+  border: 0;
+  padding: 10px 170px;
+  border-radius: 10px;
+}
+
+
+.longNeck1 {
+  position: absolute;
+  height: 400px;
+  right: 0px;
+  bottom: 0;
+}
+
+.longNeck2 {
+  position: absolute;
+  height: 300px;
+  bottom: 0;
+}
+

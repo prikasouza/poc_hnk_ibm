@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.finalpg{
+  position: absolute;
+  left: 25%;
+  top: 50%;
+}
+
+.parabens {
+  font-family: "HEINEKEN Core";
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--black);
+  background-color: var(--verde-hnk);
+  text-decoration: none;
+  border: 0;
+  padding: 10px 90px;
+  border-radius: 10px;
+
+}
+
