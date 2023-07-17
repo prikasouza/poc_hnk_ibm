@@ -28,10 +28,13 @@
   width: 758px;
   margin: auto;
   text-align: center;
+  animation:  aparecer 5s alternate;
 
 }
 .container img {
   margin-top: 57px;
+ 
+  
 }
 
 .container p {
@@ -39,6 +42,8 @@
   font-size: 24px;
   font-weight: 400;
   margin-top: 30px;
+  opacity: 1;
+  
 }
 .hnk {
   font-family: "HEINEKEN Core";
@@ -73,3 +78,34 @@
   bottom: 0;
 }
 
+.logohnk {
+  
+  width: 600px;
+  margin-left: 25%;
+  margin-top: 20px;
+  animation: motionlogo 5s alternate ;
+}
+
+@keyframes motionlogo {
+  from {
+    width: 300px;
+    margin-left: 73%;
+    margin-top: 20px;
+  }
+  to {
+    width: 600px;
+  margin-left: 25%;
+  margin-top: 20px;
+  }
+}
+
+@keyframes aparecer {
+  from {
+    margin-top: 100px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 30px;
+    opacity: 1;
+  }
+}
