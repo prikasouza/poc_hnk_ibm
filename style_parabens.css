@@ -5,34 +5,85 @@
 }
 .btnparabens {
   font-family: "HEINEKEN Core";
-  font-size: 22px;
-  font-weight: 400;
+  font-size: 25px;
   color: var(--black);
   background-color: var(--verde-hnk);
   text-decoration: none;
   border: 0;
   padding: 10px 70px;
   border-radius: 10px;
-  position: absolute;
-  top: 40px;
-  right: 33%;
-  animation: scaleButton 0.8s alternate, buttondown 10s alternate;
+  animation: scaleButton 5s alternate, 
+             buttondown 1s 15s alternate;
+  
 }
-.box {
+
+.logo {
+  width: 300px;
+  margin-left: 73%;
+  margin-top: 20px;
+}
+.container2 {
+width: 500px;
+ margin: auto;
+ text-align: center;
+ 
+ 
+}
+.star {
+  width: 300px;
   position: absolute;
+  left: 37%;
+  top: 40%;
+  z-index: 0;
+  opacity: 1;
+  animation: girar 5s alternate infinite, visibleTrans 1s alternate;
+   
+}
+
+.box{
   background-color: white;
   width: 400px;
   height: 300px;
   border-radius: 8px;
-  top: 0%;
-  left: 27%;
-  animation: visibleTrans 0.8s alternate;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  z-index: 1;
+  opacity: 1;
+  animation: visibleTrans 5s 15s alternate;
+  
 }
 
-.star {
+.lata {
   position: absolute;
-  animation: rotate 7s alternate infinite, tamanho 7s alternate infinite,
-    visibleTrans 0.8s alternate;
+  left: 10%;
+  top: 22%;
+}
+
+.arrow {
+  position: absolute;
+  left: 20%;
+  top: 38%;
+}
+
+
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+    width: 300px;
+    position: absolute;
+    left: 37%;
+    top: 40%;
+    
+  }
+  to {
+    transform: rotate(360deg);
+    width: 770px;
+  position: absolute;
+  left: 20%;
+  top: 15%;
+  }
 }
 
 @keyframes scaleButton {
@@ -40,39 +91,51 @@
     font-size: 18px;
   }
   to {
-    font-size: 22px;
-  }
-}
-@keyframes buttondown {
-  from{
-font-size: 22px;
-  }
-  to{
-font-size: 32px;
-top: 300px;
-  right: 27%;
-  }
-  
-}
-@keyframes tamanho {
-  from {
-    width: 300px;
-    right: 37%;
-    top: 37%;
-  }
-  to {
-    width: 900px;
-    right: 14%;
-    top: 0%;
+    font-size: 25px;
   }
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
+@keyframes buttondown {
+  0%{
+font-size: 25px;
+
   }
-  to {
-    transform: rotate(360deg);
+  15%{
+    font-size: 26px;
+margin-top: 50px;
+position: absolute;
+right: 27%;
+  }
+  25%{
+    font-size: 26px;
+margin-top: 70px;
+position: absolute;
+right: 27%;
+  }
+  50%{
+    font-size: 28px;
+margin-top: 100px;
+position: absolute;
+right: 27%;
+  }
+  65%{
+    font-size: 30px;
+    margin-top: 150px;
+    position: absolute;
+    right: 27%;
+  }
+  85%{
+    font-size: 31px;
+    margin-top: 170px;
+    position: absolute;
+    right: 27%;
+  }
+  100%{
+font-size: 32px;
+margin-top: 200px;
+position: absolute;
+right: 27%;
+  
   }
 }
 
@@ -80,13 +143,11 @@ top: 300px;
   from {
     visibility: visible;
     opacity: 1;
-
-    to {
-      visibility: hidden;
-      opacity: 0;
-      transition: opacity 0.5s;
-    }
+    
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
   }
 }
-
-
